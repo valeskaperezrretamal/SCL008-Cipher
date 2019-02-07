@@ -1,13 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Cifrado Cesar</title>
+    <link rel="stylesheet" href="Style.css" type="text/css" media="all" />
+    </style>
   </head>
   <body>
-    <div id="root">
-      <h1>2da Prueba subida a git hub!</h1>
+    <div class="divArriba">
+      <h1>!Hola!</h1>
+      <p>Bienvenido a la pagina de cifrados.com, donde somos especialistas para cifrar tus mensajes, los cuals serán ilegibles para el resto de las personas</p>
+    </div>
+    <div id="divIzq">
+      <p>Texto original aquí</p>
+      <textarea id="cajaTextoOriginal" class="cajaTextoGrande"></textarea>
+    </div>
+    <div class="divBlancoVacio">
+    </div>
+    <div id="divMedio">
+      <input type="submit" name="" value="Codificar">
+      <p>numero de cifrado/desifrado</p>
+      <input type="text" id="cajaTextoNumero" class="cajaTextoChica" value="5">
+      <br>
+      <input type="submit" name="" value="Descodificar">
+    </div>
+    <div class="divBlancoVacio">
+    </div>
+    <div id="divDer">
+      <p>Texto codificado</p>
+      <textarea id="cajaTextoCodificados" class="cajaTextoGrande"></textarea>
+    </div>
+
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>

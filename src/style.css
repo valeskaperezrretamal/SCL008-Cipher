@@ -1,1 +1,33 @@
-/* Acá va tu código */
+#divIzq{
+  float: left;
+}
+#divMedio{
+  float: left;
+  width: 140px;
+}
+#divDer{
+  float: left;
+}
+
+.cajaTextoGrande{
+  width: 400px;
+  height: 200px;
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  padding: 8px 12px;
+}
+.cajaTextoChica{
+  width: 25px;
+}
+.divBlancoVacio{
+  width: 30px;
+  height: 200px;
+  float: left;
+
+}
+h1{
+  text-align: center;
+}
+.divArriba{
+  width: 1000px;
+}
