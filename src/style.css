@@ -1,14 +1,29 @@
-#divIzq{
-  float: left;
+*{
+  margin: 0 auto;
+  padding: 0 auto;
 }
+#divArriba{
+margin: 5%;
+
+}
+  #divIzq{
+  float: left;
+  margin: 5%;
+ }
+
 #divMedio{
   float: left;
   width: 140px;
+  margin: 5%;
 }
 #divDer{
   float: left;
+margin: 5%;
 }
 
+div {
+  background-color:rgb(192, 130, 173);
+}
 .cajaTextoGrande{
   width: 400px;
   height: 200px;
@@ -23,11 +38,14 @@
   width: 30px;
   height: 200px;
   float: left;
-
 }
 h1{
   text-align: center;
 }
-.divArriba{
-  width: 1000px;
+
+body{
+   
+  background-image:url("fondopagina.jpg");
+  background-size: cover;
+  
 }
