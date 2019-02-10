@@ -11,22 +11,32 @@ const botondecodificar = document.getElementById ("botondecodificar");
 
 /*-------------------------definición de eventos----------------------------*/
 botoncodificar.addEventListener("click", () => {
-/*codigo para guardar en una variable, el contenido de caja texto original*/
-const textoOriginal = document.getElementById("cajaTextoOriginal").value
+    /*codigo para guardar en una variable, el contenido de caja texto original*/
+    const textoOriginal = document.getElementById("cajaTextoOriginal").value;
 
-/*codificar el texto usando cipher y guardarlo en una nueva varieble*/
+    /*guarda en una variable el valor del numero (offset) de la caja chica*/
+    const numeroOffset = document.getElementById("cajaTextoNumero").value;
+    /*codificar el texto usando cipher y guardarlo en una nueva varieble parseInt convierte el numero
+    en formato string a tipo number*/
 
-const textoCodificado = cipher(2,textoOriginal);
+    const textoCodificado = cipher(parseInt(numeroOffset,10),textoOriginal);
 
-/*escribir el texto codificado en la caja texto  codificado*/
-document.getElementById("cajaTextoCodificado").value = textoCodificado;
+    /*escribir el texto codificado en la caja texto  codificado*/
+    document.getElementById("cajaTextoCodificado").value = textoCodificado;
 })
 
 botondecodificar.addEventListener("click", () => {
-    /*agregar codigo para guardar en una variable, el contenido de caja texto caja codificado*/
-    
-    
+    /*agregar codigo para guardar en una variable el contenido de caja texto codificado*/
+    const textoCodificado = document.getElementById("cajaTextoCodificado").value;
+   
+    /*guardar en una variable el valor del numero (offset) de la caja chica*/
+    const numeroOffset = document.getElementById("cajaTextoNumero").value;
+
     /*decodificar el texto usando cipher decode*/
+    const textoDecodificado = cipher(parseInt(numeroOffset,10)*(-1),textoCodificado);
     
     /*escribir el texto decodificado en la caja texto original*/
-    })
+    document.getElementById("cajaTextoOriginal").value = textoDecodificado;
+
+
+ })
