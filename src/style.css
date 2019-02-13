@@ -3,7 +3,7 @@
   padding: 0 auto;
 }
 #divArriba{
-margin: 5%;
+  margin: 5%;
 
 }
   #divIzq{
@@ -16,9 +16,12 @@ margin: 5%;
   width: 140px;
   margin: 5%;
 }
+#botonborrar{
+  margin: 5%;
+}
 #divDer{
   float: left;
-margin: 5%;
+  margin: 5%;
 }
 
 div {
@@ -34,11 +37,7 @@ div {
 .cajaTextoChica{
   width: 25px;
 }
-.divBlancoVacio{
-  width: 30px;
-  height: 200px;
-  float: left;
-}
+
 h1{
   text-align: center;
 }
